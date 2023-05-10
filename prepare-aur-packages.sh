@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PACKAGES="apple_cursor checkupdates+aur macchina-bin nordic-darker-theme whitesur-icon-theme xiccd calamares"
+PACKAGES="apple_cursor checkupdates+aur macchina-bin nordic-darker-theme whitesur-icon-theme xiccd"
 DIR="$(dirname ${0})/tmp"
 
 echo "Create dir ${DIR}"
