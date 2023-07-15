@@ -1,13 +1,13 @@
 #!/bin/sh
 
-PACKAGES="apple_cursor checkupdates+aur macchina-bin nordic-darker-theme whitesur-icon-theme xiccd upd72020x-fw"
-DIR="$(dirname ${0})/tmp"
+PACKAGES="apple_cursor checkupdates+aur macchina-bin nordic-darker-theme whitesur-icon-theme xiccd"
+DIR="$(dirname "${0}")/tmp"
 
 echo "Create dir ${DIR}"
 mkdir -p "$DIR"
 
 echo "download packages :${PACKAGES}"
-cd "$DIR" && yay -G $PACKAGES
+cd "$DIR" && yay -G "$PACKAGES"
 
 for f in *; do
     if [ -d "$f" ]; then
