@@ -5,7 +5,7 @@ DIR="$(dirname "${0}")/tmp"
 echo "Create dir ${DIR}"
 mkdir -p "$DIR"
 
-cd "$DIR" && yay -G apple_cursor checkupdates+aur albafetch nordic-darker-theme xiccd xss-lock-session
+cd "$DIR" && yay -G apple_cursor albafetch nordic-darker-theme xiccd xss-lock-session
 for f in *; do
     if [ -d "$f" ]; then
         echo "making package ${f}"
@@ -15,6 +15,6 @@ for f in *; do
 done
 
 cd ..
-# rm -rf "$DIR"
+rm -rf "$DIR"
 
 cd x86_64 && repo-add ./urban-disco-repo.db.tar.gz ./*.pkg.tar.zst
