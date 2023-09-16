@@ -5,7 +5,7 @@ DIR="$(dirname "${0}")/tmp"
 echo "Create dir ${DIR}"
 mkdir -p "$DIR"
 
-cd "$DIR" && yay -G apple_cursor albafetch nordic-darker-theme xiccd xss-lock-session
+cd "$DIR" && yay -G apple_cursor albafetch nordic-darker-theme xiccd
 for f in *; do
     if [ -d "$f" ]; then
         echo "making package ${f}"
