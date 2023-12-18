@@ -5,8 +5,8 @@ DIR="$(dirname "${0}")/tmp"
 echo "Create dir ${DIR}"
 mkdir -p "$DIR"
 
-cd "$DIR"
-packages=("apple_cursor" "albafetch" "nordic-darker-theme" "xiccd" "xss-lock-session")
+cd "$DIR" || exit
+packages=("apple_cursor" "albafetch" "nordic-darker-theme" "xiccd" "xss-lock-session" "xfce-polkit")
 for f in "${packages[@]}"; do
     # git clone --branch "$f" --single-branch https://github.com/archlinux/aur.git "$f"
     curl -L -O https://aur.archlinux.org/cgit/aur.git/snapshot/"$f".tar.gz
