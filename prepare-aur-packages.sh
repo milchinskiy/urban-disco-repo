@@ -20,4 +20,4 @@ done
 cd "$SCRIPT_DIR" || exit
 rm -rf "$DIR"
 
-cd "$SCRIPT_DIR"/x86_64/ && ./rebuild.sh
+cd "$SCRIPT_DIR"/x86_64/ && repo-add customrepo.db.tar.gz *.pkg.tar.zst
