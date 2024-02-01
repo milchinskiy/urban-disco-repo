@@ -20,4 +20,4 @@ done
 cd "$SCRIPT_DIR" || exit
 rm -rf "$DIR"
 
-cd "$SCRIPT_DIR"/x86_64/ && repo-add customrepo.db.tar.gz *.pkg.tar.zst
+cd "$SCRIPT_DIR"/x86_64/ && repo-add urban-disco-repo.db.tar.gz ./*.pkg.tar.zst
