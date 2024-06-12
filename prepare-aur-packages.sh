@@ -6,7 +6,7 @@ DIR="$SCRIPT_DIR/tmp"
 echo "Create dir ${DIR}"
 mkdir -p "$DIR"
 
-packages=("apple_cursor" "albafetch" "xiccd" "xss-lock-session" "xfce-polkit" "xstow" "moc-pulse" "awesome-git")
+packages=("apple_cursor" "albafetch" "xiccd" "xss-lock-session" "xfce-polkit" "xstow" "moc-pulse")
 for f in "${packages[@]}"; do
   cd "$DIR" || exit
   # git clone --branch "$f" --single-branch https://github.com/archlinux/aur.git "$f"
